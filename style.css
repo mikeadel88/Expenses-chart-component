@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    box-sizing: border-box;
+    margin:0 ;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(27, 66%, 92%);
+}
+.card{
+
+    margin-bottom: 10px;
+}
+.balance{
+    width: 420px;
+    color: #ffff;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text p{
+font-size: 14px;
+margin-bottom: 5px;
+}
+.text h3{
+    margin: 0;
+    font-size: 22px;
+    }
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #382314;
+    border-radius: 50%;
+    position: relative;
+}
+.circle::before{
+   content: "";
+   width: 40px;
+   height: 40px;
+   border: 2px solid #ffff;
+   border-radius: 50%;
+   position: absolute;
+   left: -50%;
+}
+.charts{
+    width: 420px; 
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 0 10px;
+
+}
+.columns{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30vh;
+
+    
+}
+.label{
+    display: none;
+    background-color: #000;
+    opacity: .7;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    position: absolute;
+    top:45%;
+   
+    word-break: keep-all;
+}
+ .col{
+    width: 40px;
+    background-color:hsl(10, 79%, 65%) ;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+
+}
+.col:hover{
+    background-color:hsl(27, 66%, 92%) ;
+}
+.col:hover + .label{
+    display: block;
+}
+.caption{
+    color: hsl(28, 10%, 53%);
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+.divider{
+    width: 90%;
+    height: 1px;
+    background-color: #000;
+    opacity: .2;
+    margin: 0 auto;
+}
+.total-balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.percent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.total-month{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:  flex-start;
+}
+.total-month h1{
+    margin: 0;
+}
